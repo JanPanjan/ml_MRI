@@ -1,0 +1,254 @@
+{
+  "main": {
+    "id": "4578064146ae66cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "f6c2a95c29613af1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e8c2491691a9dcc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "daily/2025-02-16.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-02-16"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2dd4234f82ac1562",
+    "type": "split",
+    "children": [
+      {
+        "id": "0fd1431825a4ffdd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03a386b5e5a00948",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3161f1b8d7b1af19",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c12e1b23c0eeb789",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "73aac09cba63ca9f",
+    "type": "split",
+    "children": [
+      {
+        "id": "95d3f05d6a539bc7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee69c5e0cdca5180",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "daily/2025-02-15.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2025-02-15"
+            }
+          },
+          {
+            "id": "587a27aaf4694045",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tools.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Tools"
+            }
+          },
+          {
+            "id": "e6df6865df8db36d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e9489fe117205be9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "b27246460e1e7dd4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c2f7d5da8021526b",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "daily/2025-02-15.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for 2025-02-15"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "obsidian-excalidraw-plugin:Create new drawing": true,
+      "code-files:Create Code File": true,
+      "templater-obsidian:Templater": true
+    }
+  },
+  "active": "6e8c2491691a9dcc",
+  "lastOpenFiles": [
+    "Tools.md",
+    "HR MR images problem.md",
+    "Machine Learning aproach to MRI reconstruction.md",
+    "k-space.md",
+    "fully and under-sampled data.md",
+    "DATAAAAA.md",
+    "Data sites.md",
+    "CNNs.md",
+    "Articles.md",
+    "visual artifacts.md",
+    "Aliasing artifacts.md",
+    "daily/2025-02-16.md",
+    "daily/2025-02-15.md",
+    "Image upscaling.md",
+    "files/NYU FastMRI Data Download Links.eml",
+    "files/Pasted image 20250215225056.webp",
+    "files/Pasted image 20250215210731.webp",
+    "files/Pasted image 20250215210655.webp",
+    "files/Pasted image 20250215204856.webp",
+    "New Text Document.txt",
+    "files/red-cross.webp",
+    "files",
+    "New folder",
+    "daily",
+    "color.md",
+    "§Index.md",
+    "Prošnja za projekt.md",
+    "Welcome.md",
+    "Podatkovne baze.md",
+    "Fizični nivo abstrakcije.md",
+    "Sistemi za upravljanje podatkovnih baz (SUPB).md",
+    "Relacijski model podatkovnih baz.md",
+    "files/Pasted image 20250215154917.webp",
+    "Logs.md",
+    "Nivoji abstrakcije v SUPB.md",
+    "ACID lastnosti.md",
+    "Transakcije.md",
+    "files/Pasted image 20250215150001.webp",
+    "files/Pasted image 20250215145931.webp",
+    "files/Pasted image 20250215144706.webp",
+    "files/Pasted image 20250215144645.webp"
+  ]
+}

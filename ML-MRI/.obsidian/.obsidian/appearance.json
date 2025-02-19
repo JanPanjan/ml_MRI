@@ -1,0 +1,13 @@
+{
+  "cssTheme": "",
+  "theme": "system",
+  "accentColor": "#499c57",
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "enabledCssSnippets": [
+    "pokedexInfo"
+  ],
+  "baseFontSize": 16,
+  "nativeMenus": false,
+  "showRibbon": true
+}

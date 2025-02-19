@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Dynamic Color",
+  "theme": "obsidian",
+  "accentColor": "",
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "enabledCssSnippets": [
+    "pokedexInfo"
+  ]
+}

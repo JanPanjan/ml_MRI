@@ -1,0 +1,2 @@
+Open-source Python package for exploring, visualizing, and analyzing human neurophysiological data: MEG, EEG, sEEG, ECoG, NIRS, and more.
+- [MNE — MNE 1.9.0 documentation](https://mne.tools/stable/index.html)

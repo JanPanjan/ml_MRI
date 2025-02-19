@@ -1,0 +1,652 @@
+Received: from PAWPR08MB10975.eurprd08.prod.outlook.com (2603:10a6:102:46e::7)
+ by DB5PR08MB10234.eurprd08.prod.outlook.com with HTTPS; Sat, 15 Feb 2025
+ 22:41:22 +0000
+Received: from PAZP264CA0054.FRAP264.PROD.OUTLOOK.COM (2603:10a6:102:1fc::6)
+ by PAWPR08MB10975.eurprd08.prod.outlook.com (2603:10a6:102:46e::7) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8422.16; Sat, 15 Feb
+ 2025 22:40:50 +0000
+Received: from AMS0EPF000001A0.eurprd05.prod.outlook.com
+ (2603:10a6:102:1fc:cafe::fe) by PAZP264CA0054.outlook.office365.com
+ (2603:10a6:102:1fc::6) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8445.18 via Frontend Transport; Sat,
+ 15 Feb 2025 22:40:50 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.8.73)
+ smtp.mailfrom=amazonses.com; dkim=pass (signature was verified)
+ header.d=med.nyu.edu;dmarc=pass action=none
+ header.from=med.nyu.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of amazonses.com designates
+ 54.240.8.73 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.240.8.73; helo=a8-73.smtp-out.amazonses.com; pr=C
+Received: from a8-73.smtp-out.amazonses.com (54.240.8.73) by
+ AMS0EPF000001A0.mail.protection.outlook.com (10.167.16.230) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8466.11
+ via Frontend Transport; Sat, 15 Feb 2025 22:40:49 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=wg4am4rx7cnqxeshw7l3qkpf56qxgzer; d=med.nyu.edu; t=1739659248;
+	h=Content-Type:MIME-Version:Subject:From:To:Message-ID:Date;
+	bh=3oWw1gyN7zlh57gcltyv7Qluk5/Mh48S3PwnnEj/QZ0=;
+	b=pfKNPi/u3DNZqBRiUCpKp8DBk0UH0Zv3jzYIm/1b815MKfqnf+1sxZlrA8kFa1X/
+	WJdJZ6cF0bGHJgjRT6xGnLaJW1qK/i8n1JN9snobZUJRwTR0c+ixMjV5I8U0m3xSYX0
+	IqTgYdLT1VQdlQRVkhWR/W9koujbjc6hwKKDiehQ=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1739659248;
+	h=Content-Type:MIME-Version:Subject:From:To:Message-ID:Date:Feedback-ID;
+	bh=3oWw1gyN7zlh57gcltyv7Qluk5/Mh48S3PwnnEj/QZ0=;
+	b=uASHQKWfIOhnPlvBB55HpMV2qUDm/YHWRIhu45jkshZ13f2T/lzTOAx8OCAeghRP
+	Qf41XOOTMyEh9xn8houYPtykI7J2VMT1MzIQ4NKvLD6SDELnIn28jYwDq+695DCCbNU
+	zJtZoBlgBSnc5stwVMNyc8YowZNKDp6jUzPNa3i8=
+Content-Type: multipart/alternative; boundary="===============8162749054337002200=="
+Subject: NYU FastMRI Data Download Links
+From: NYU FastMRI <fastmri@med.nyu.edu>
+To: 89231282@student.upr.si
+Message-ID: <010001950bc581b2-c2319dba-4c77-4420-8c06-8615a5881519-000000@email.amazonses.com>
+Date: Sat, 15 Feb 2025 22:40:48 +0000
+Feedback-ID: ::1.us-east-1.h/1XyNMPPcWl1hK3h6GifVMzb8x3ciowWhNSfQ589SQ=:AmazonSES
+X-SES-Outgoing: 2025.02.15-54.240.8.73
+Return-Path: 010001950bc581b2-c2319dba-4c77-4420-8c06-8615a5881519-000000@amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Feb 2025 22:40:49.7614
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: ac14eba7-319e-43e1-e004-08dd4e11cbd4
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: b421e9a7-e4d1-4bfb-b1e8-efe6698fb97b:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: AMS0EPF000001A0:EE_|PAWPR08MB10975:EE_|DB5PR08MB10234:EE_
+X-MS-Exchange-Organization-AuthSource: AMS0EPF000001A0.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: ac14eba7-319e-43e1-e004-08dd4e11cbd4
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|32142699015|8096899003|13003099007|43540500003;
+X-Forefront-Antispam-Report: CIP:54.240.8.73;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:a8-73.smtp-out.amazonses.com;PTR:a8-73.smtp-out.amazonses.com;CAT:NONE;SFS:(13230040)(32142699015)(8096899003)(13003099007)(43540500003);DIR:INB;
+X-MS-Exchange-ABP-GUID: e43a009f-79a0-4398-94d7-1a3983bf9fdf
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Feb 2025 22:40:49.3552
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: ac14eba7-319e-43e1-e004-08dd4e11cbd4
+X-MS-Exchange-CrossTenant-Id: b421e9a7-e4d1-4bfb-b1e8-efe6698fb97b
+X-MS-Exchange-CrossTenant-AuthSource: AMS0EPF000001A0.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PAWPR08MB10975
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:33.6175719
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8445.008
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?KcPrQ1jl3JJmY5wgwLAzYsZgoYXN2Ba8z28ce0msdYmkUckpSrQYItIFvor1?=
+ =?us-ascii?Q?nvF9/6jZWxrlN727LSYKj+Dj2ttBAEIcoeFObo7TowCnBFM+zQv0z+kYKa/s?=
+ =?us-ascii?Q?WMR5CiZciraGarCUO29u8oDA/jTUW/ECMOA1vkEiGrQh4Imfj4G1uOVNydY6?=
+ =?us-ascii?Q?hkvC/uhxqjLghb/kenbrAi+9huhCct0vvLw6UTaB8zPjXTYv+Zz8OHKX9TLe?=
+ =?us-ascii?Q?LQg2dgeM3QXN0oanJ1uVnmuOwJHPVgvXCfl8dwERhCBjw2ZAgfDixQmJ2DJz?=
+ =?us-ascii?Q?X6vUD/FXiyM9cEbk40en6pPYcfwGKN0xd1O9UR/xYFqsf6vSTkb5hac550tK?=
+ =?us-ascii?Q?fkHAkMg9AJ4Ki54y2OWMBIgg5yjGWGE6gulVR2ln22vLSezu32EJ8CT49YOn?=
+ =?us-ascii?Q?0wW1aEiMslnKZU102tL0L61XXDLnESMKIGlec/hL0Yww6dfnWGGmI5DEIRjj?=
+ =?us-ascii?Q?KYnalqc2Wwe5C5FRSX8YxB9BBs4SPOjppjHUFYgzt6tLAp+X3t22IT1HwO3A?=
+ =?us-ascii?Q?ViH6dqIdY0qmgOsZMFkW/+bND4f9Y6RsOX9Op9P23c4HQmmAt39jUcb8hHLp?=
+ =?us-ascii?Q?ag/uVjsNzmmE5cA4JmW7qog+LjsMYu0PS1lcf1RmOBm0gVw+B9JL32U3InO7?=
+ =?us-ascii?Q?LGpPde/2iZ7Tns9DS3thki3/hKasws8AQq6+JXQBOnHj08FzoPue9TZPont+?=
+ =?us-ascii?Q?jJ9XuOOOZk4IOKhwj/NYoTVMbuhA2piYpgqik5jwlky5tMxOCqZqNE/6HCgv?=
+ =?us-ascii?Q?lMLJov1FhD7psyng+/5rUp1GXrBOz/3IaT8VBEoKhY8z0Xh1rjGXr67M97F3?=
+ =?us-ascii?Q?QzB9l6Gdoi/djU0ChHKXt8opvEAKi7aQo8G5JJAuluzEoOxAO1l6WsE/coGE?=
+ =?us-ascii?Q?BZB7+ZZZ0TVDWMnMhuHL0y4U3FqFVXgOHXDwOmyr2Dmc3P0wrjuQAroqY8A3?=
+ =?us-ascii?Q?z61QPGGroAVDqozomU2EQvKWSdvroQ9BQSdxRAyq97RIbYCjk3yLAbyzq/Io?=
+ =?us-ascii?Q?wlBb+pjTMDD2tkXmX2RVND0hZ4WTUdJ0R03TCbY9JOF5IvfTHiuNrx9niZRw?=
+ =?us-ascii?Q?ogtZuqCNpMi6r/J11snvxYrOEEjQnkDOwwHoo0yTN+qE1FudIavXIVeeKM/s?=
+ =?us-ascii?Q?VEyu2W39FqyqHkFQfPLjyZlb6F/cPLJ7W58mIbFBG2TQBmzCN/EcBoJCIK/Z?=
+ =?us-ascii?Q?fjDM9+3CTQCeqhtltDo1a+ciVcaxYyx41XFc7QCYgWe/D/+gioPKCQ5NCrhs?=
+ =?us-ascii?Q?oEg05UL7lFN6+rEtaswmgEewesMRoffA1GHy/K18uFxSmS0CEsoqPLRjiGhK?=
+ =?us-ascii?Q?88JV999Bn2xhXcr8joqLVDmO6Eu5kPVCNzLutW9W0D9IWBI5FxxanLQT3C+k?=
+ =?us-ascii?Q?dJ+JYnHqcUfJceD+Cn8EXbpqWColP2eoOsx5pnlSaWKMq2J1ftS9lnmJDBqS?=
+ =?us-ascii?Q?pCbxXPryJarggBavVSu3LsFhKdctF1aNmAxSM3Yj1QPRk/5BVuQiP+wkRWZ2?=
+ =?us-ascii?Q?eNl1UwjoeeC2ucbpZUnXbXercvPHGM4DHsZgzJPPl4VBeOydw7iapM1Rb9zd?=
+ =?us-ascii?Q?zTtkZbBbieBRVJfaWwn8b3y08WG6JZvfPsQkFzoqNhDh4pAALwvAHtmDFtdi?=
+ =?us-ascii?Q?GhwEUk+VVPmg+JnCZ5wfard9Z6n9y4IMW1xbASEOaxUBY8bqxTGyl/ea2LdV?=
+ =?us-ascii?Q?ETqm7Kvy0fm3PLXEV8JvawBYCAduvDwuWqxLrsuJ6PTYAJAznxljdmWGJXrF?=
+ =?us-ascii?Q?87yb+IDEaCZR+/zv64WZMaDiGJmovdrbGjLc7Si0l1vPJpes1LPdSC4GK1YZ?=
+ =?us-ascii?Q?zEa1Y5JfhvYw3q/qOSk7USeS/jGTNoLaMMDynVXMp1kQ8/CW9Po3dg3GyWUi?=
+ =?us-ascii?Q?mfB4rq6dEKcg4LrA085tjqfiKsjJI2iCp0tqAnHs867ovdpgbNzgticZv8Mw?=
+ =?us-ascii?Q?2IRoIKvXWc5hJ3WBzpyeG9GvTIeypHPziyTdNP7XYztC75UR1i8tAvXwHSRL?=
+ =?us-ascii?Q?4bBnNCCytEgLdPVtobsns56We8RgXLCHp/162GflcvDhoILi0VXkCeRib75U?=
+ =?us-ascii?Q?JQhHaQYgYZglnDX6qfhyD+L3hIjRW3vHCy7kMmtrp7Rzn6WLfAWO789PzHb7?=
+ =?us-ascii?Q?AKKG1dxIcmv6IDbHfCxf540AtNqG0zMEevveDR/DsAkpwhGg44jln50FI4dE?=
+ =?us-ascii?Q?C9axDTBy6dJvy2Y6?=
+MIME-Version: 1.0
+
+--===============8162749054337002200==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Jan Panjan,
+Here are the links you requested. Please note the below urls expire in 90 days; if additional time is needed or you would like to download the files again, you will need to submit a new request on https://fastmri.med.nyu.edu:
+
+Knee MRI:
+knee_singlecoil_train (~72.7 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_train.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Z59XKieXHYkZzQyn7IiFVk9ld6k%3D&Expires=1747435247
+knee_singlecoil_val (~14.9 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_val.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=mqIs%2Bmr51Kb3Q%2FFALd0D4J3aBzM%3D&Expires=1747435247
+knee_singlecoil_test (~1.4 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_test.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=FtLnNkuibYYvKIxiLRknMYnpBYQ%3D&Expires=1747435247
+knee_multicoil_train_batch_0 (~91.1 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=CmIHv3ooArtd2SSeruSrFGz%2B7qo%3D&Expires=1747435247
+knee_multicoil_train_batch_1 (~92.1 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=oprTtV%2Fw58pmFlCO%2B8FgB6ZYFkI%3D&Expires=1747435247
+knee_multicoil_train_batch_2 (~90.7 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=h1n5hF3FXzFPa1tsOhXtYOqgOio%3D&Expires=1747435247
+knee_multicoil_train_batch_3 (~90.4 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_3.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=uRiaAzW45arfhfXdqwsz8Ie5tl8%3D&Expires=1747435247
+knee_multicoil_train_batch_4 (~91.0 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_4.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=W2AVxCAArgr%2FJ46IO7Um0OwsWZ4%3D&Expires=1747435247
+knee_multicoil_val (~93.8 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_val.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=N74EkKG0aeJ9clHxPWICQzHPaYE%3D&Expires=1747435247
+knee_multicoil_test (~16 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_test.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=P12ko4O4SKWJ1b%2B%2FbKJmtkYynjQ%3D&Expires=1747435247
+knee_DICOMs_batch1 (~134 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_DICOMs_batch1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=%2BxfNrNX%2BhJGLQkYBpoY6BTAmu7U%3D&Expires=1747435247
+knee_DICOMs_batch2 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_DICOMs_batch2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=eyrNIUl255pNGfw2GfwbqwWo7os%3D&Expires=1747435247
+
+
+Brain MRI:
+brain_multicoil_train_batch0 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=rQWvTJJYRo0JMuZa7kTlObFLZTk%3D&Expires=1747435247
+brain_multicoil_train_batch1 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Kf5CMPCKZ7w4sXEiIO05ndsjpw8%3D&Expires=1747435247
+brain_multicoil_train_batch2 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=2YBoiHVYWNT1%2F8EgMFn5hgHD%2Bhw%3D&Expires=1747435247
+brain_multicoil_train_batch3 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_3.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=cL953Fg6ECnmepx2w7AkJHKdKLI%3D&Expires=1747435247
+brain_multicoil_train_batch4 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_4.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=KSVgW7Z5XGfV%2Fx9zgOcZeNwAYbE%3D&Expires=1747435247
+brain_multicoil_train_batch5 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_5.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=0qyLPmLDbno2njf%2FTUEzVyhoC7A%3D&Expires=1747435247
+brain_multicoil_train_batch6 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_6.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=NeBhee5jVtg65AgoFZhZiI5gmdE%3D&Expires=1747435247
+brain_multicoil_train_batch7 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_7.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Spm9oTEonufS9nZBAmObuENIeL4%3D&Expires=1747435247
+brain_multicoil_train_batch8 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_8.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=nJUlcG5IkTHOh7c2ng5xr3D6IUI%3D&Expires=1747435247
+brain_multicoil_train_batch9 (~98.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_9.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=kD1d%2BuMCISeQq55sqtWXbJQb%2FDg%3D&Expires=1747435247
+brain_multicoil_val_batch_0 (~93.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=s7Auk8z%2BR8tPUIb2vH%2F2C45x0B4%3D&Expires=1747435247
+brain_multicoil_val_batch_1 (~88.7 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Wk1V6l3d1ByiiKO8YREd0c7DotU%3D&Expires=1747435247
+brain_multicoil_val_batch_2 (~93.8 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=9tWdEm%2FQwC7QWcldCpnA%2BlF5U%2BA%3D&Expires=1747435247
+brain_multicoil_test_batch_0 (~9.2 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=qullCsy9P%2BNJ4WBi9zAQOLpkls8%3D&Expires=1747435247
+brain_multicoil_test_batch_1 (~8.6 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=KhWItUpqTh2meah3DnzpIB%2FHw34%3D&Expires=1747435247
+brain_multicoil_test_batch_2 (~8.5 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=dS4v0%2BqVb%2Bfr1jwCt3ufbVdXH4w%3D&Expires=1747435247
+brain_multicoil_test_full_batch_0 (~39.4 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=AumizQZiJlg3VqkS9BqKhqz4w0w%3D&Expires=1747435247
+brain_multicoil_test_full_batch_1 (~38.4 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Ydbl1meEOkrtCTgwdg6CCrXXSRc%3D&Expires=1747435247
+brain_multicoil_test_full_batch_2 (~35.8 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=g8JwHxe5G8kXCUms6%2BpVnqfNWM4%3D&Expires=1747435247
+brain_fastMRI_DICOM (~38.8 GB): https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_fastMRI_DICOM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=H5JixBJTKUmmbDdGuW%2BAVXBbKoI%3D&Expires=1747435247
+
+
+Prostate MRI:
+labels (~0.0014 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/labels.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=i67ysqJ1T7wn4lPLt5BCyFN30Ks%3D&Expires=1747435247
+fastmri_prostate_DICOMS_IDS_001_312 (~1.9 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastmri_prostate_DICOMS_IDS_001_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=IlCiq33RiNAGikP80k7GmguZHf0%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_001_011 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_001_011.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=yc4TZPc6H18CLFskeBqsi4Bak%2Bs%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_012_022 (~33 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_012_022.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=65jzob%2FZxltqseDBSkz%2BkEAZYKQ%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_023_033 (~33 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_023_033.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=A8DVK2XOhGvAXwUGArmjAWmqj2g%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_034_044 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_034_044.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=3B6HuFZhU3PdaHvUcxRk1uMb2Jg%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_045_055 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_045_055.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=OyDrIk7htULBvHa2T3Ao%2BX3W4R4%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_056_066 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_056_066.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=QXd0cQtS2bYeSCFwCm4DozczVG0%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_067_077 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_067_077.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=8WMlbMJkImOK2onACqjLaTqz%2Fok%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_078_088 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_078_088.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=VwmvuC%2BcM%2F19QA1V%2BF6%2BigZjWgI%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_089_099 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_089_099.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=9noYic9gX%2BhYFNpl0SKgXIerbYo%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_100_110 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_100_110.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=wQeP1RehtDz9q9Jg8%2FStT%2FxlwLU%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_111_121 (~29 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_111_121.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=wxM9XyDBHnrSbLN7HhQg3q1Q5T4%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_122_132 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_122_132.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=uG2qnFAWKxly7yh9y%2B3wOz%2FiirQ%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_133_142 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_133_142.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=NuTlM1FMiILQLybC9d%2FDBMTb270%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_143_152 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_143_152.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=ZUfB5VzaQwf001fmk3YVBVDe6tg%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_153_162 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_153_162.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=XWz%2Fq%2FU7wCz8wzOFw5vc9OSKLsg%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_163_172 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_163_172.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=I4GUkBDh0UXg2CihxL9P6Qxgqaw%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_173_182 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_173_182.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=b%2BoVVwH1uHMRjQT0msLNfbIvcXM%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_183_192 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_183_192.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=DjTCyDBeHgEcA8IMQESemwn2l5w%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_193_202 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_193_202.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=YClG%2BWRWyCAFtIWRdHSFxtINnTg%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_203_212 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_203_212.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=gFk10BEvHf%2B3AxV9eiHWPdYMNg0%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_213_222 (~33 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_213_222.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=2MuPlNauOp1Io2XCt9vdupuBWE8%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_223_232 (~34 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_223_232.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=lz1nOn6YduUqdrS79RH6cTc2C68%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_233_242 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_233_242.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=krodHapmEZl%2FoyKc0mu3DPqZxzc%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_243_252 (~29 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_243_252.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=OlZfJtanx%2BnWanbG2P9TPwr5hGs%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_253_262 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_253_262.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Ttym03DBjScst4LSig62pQa%2FL%2BQ%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_263_272 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_263_272.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=FAJRhb66g2JpPT%2FpjD7RPGYzq6c%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_273_282 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_273_282.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=78OhuCEzcJU2b896DeJLyea5tjA%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_283_292 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_283_292.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=TZhaYo2gFCApMjOHSgLBVpLrAv8%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_293_302 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_293_302.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=DWoXB4247VmvTuZEk0h6v%2F9k3g0%3D&Expires=1747435247
+fastMRI_prostate_DIFF_IDS_303_312 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_303_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=du7%2FrfKyJ%2B0Z4z3D6xrCsjiIMUo%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_001_020 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_001_020.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Fd%2BGluJUBEKohlGigGLuOUTuAFk%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_021_040 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_021_040.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=gVdKnUHCZzqjbTbXUxpjwgzJtYw%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_041_060 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_041_060.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=i0B%2BSE%2FmCiTdHs38XB2Kr2VWdTI%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_061_080 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_061_080.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=QjKbRV8wpkTJEWf3Cq9JKBAorAE%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_081_100 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_081_100.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=BOVHPFLxVsdp5IXfJFDHyuSBELs%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_101_120 (~33 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_101_120.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=6pLNNQ2hYpkbTwzb7ezheWPHWsU%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_121_140 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_121_140.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=BlYOSaeHJ0BYSpgRrvcNxeEVnW0%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_141_160 (~30 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_141_160.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=AGtgYyrw7P4jazhs3ZdD1GVwPKs%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_161_179 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_161_179.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=ssEYT0fA8uzb9iwLvdMfDZBlUSY%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_180_198 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_180_198.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=FtyuqEK1xUmMrTBSxBMOnRL6%2F9s%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_199_217 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_199_217.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=C3kZZXF2WlHo%2FrDOnEhPSrxvAkk%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_218_236 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_218_236.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=apv%2BsCIFkot309w9RXQeipFukRU%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_237_255 (~29 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_237_255.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=oSG%2FxHjD%2FZAHDZ1CYX%2FmCsZ0UIU%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_256_274 (~32 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_256_274.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=fApHx8xTZ8XRm1d0DvRtnHj%2BlSE%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_275_293 (~31 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_275_293.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Bekk6u3iYcTAGafW%2FoIeclfSN5g%3D&Expires=1747435247
+fastMRI_prostate_T2_IDS_294_312 (~33 GB): https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_294_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Ab2jihXZMz2YulgURscE6A8XRkA%3D&Expires=1747435247
+
+
+Brest MRI:
+fastMRI_breast_IDS_001_150_DCM (~57 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_001_150_DCM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=JJSFzrsr%2FOYVkH0%2BrjpxyVJJY1o%3D&Expires=1747435247
+fastMRI_breast_IDS_150_300_DCM (~57 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_150_300_DCM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=O5oPusXwfTGde9IMsKxAZNl4Dlg%3D&Expires=1747435247
+fastMRI_breast_IDS_001_010 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_001_010.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=RWsCF%2B3WhZ68RVA7CHHeajpYTaY%3D&Expires=1747435247
+fastMRI_breast_IDS_011_020 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_011_020.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Q0V57bEaa54nc3Q7mmMDpR9Ls%2Bo%3D&Expires=1747435247
+fastMRI_breast_IDS_021_030 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_021_030.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=SMV2rd6epZCE9pHN8lMnXfKTvr8%3D&Expires=1747435247
+fastMRI_breast_IDS_031_040 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_031_040.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=SCBcJWtY6wfF835ZtkQSSXrQJZ8%3D&Expires=1747435247
+fastMRI_breast_IDS_041_050 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_041_050.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=9uod2UPnqXVoh19OrAOLz3wbjug%3D&Expires=1747435247
+fastMRI_breast_IDS_051_060 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_051_060.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=zp8KVaB3XrsvW%2FsziqZFv0XsS%2Bk%3D&Expires=1747435247
+fastMRI_breast_IDS_061_070 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_061_070.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=K%2BLZzMUTIj1NoSMJJdDMlcoMotg%3D&Expires=1747435247
+fastMRI_breast_IDS_071_080 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_071_080.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=3KpM7dQadfZAFfNkDQn8QxNhAXk%3D&Expires=1747435247
+fastMRI_breast_IDS_081_090 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_081_090.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=%2FrEXKH62JjizjvoV2ZpFxbBnfhg%3D&Expires=1747435247
+fastMRI_breast_IDS_091_100 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_091_100.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Mnc5C7RJ7%2F4e5Y4OgN6EFbu%2F1Kk%3D&Expires=1747435247
+fastMRI_breast_IDS_101_110 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_101_110.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=%2FU1JyLDKAXJMFVYSWoYFmnt5uIg%3D&Expires=1747435247
+fastMRI_breast_IDS_111_120 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_111_120.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=PfumSmvqVtRCMh%2FUoLYHGTZR3Xc%3D&Expires=1747435247
+fastMRI_breast_IDS_121_130 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_121_130.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=CPYBCrw8%2FFOp%2BUsDGuQHY59KzIY%3D&Expires=1747435247
+fastMRI_breast_IDS_131_140 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_131_140.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=dmZjD9z8dJRknF5moH8DoredSpE%3D&Expires=1747435247
+fastMRI_breast_IDS_141_150 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_141_150.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=iN4TJ97jb0llMwCv5hBmSLykQFk%3D&Expires=1747435247
+fastMRI_breast_IDS_151_160 (~86 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_151_160.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=KBuyK2iw3H7mHqESluP%2B7mWYlIs%3D&Expires=1747435247
+fastMRI_breast_IDS_161_170 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_161_170.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=cueV4DXQLkfDh6AMkOT2Xk6Dd90%3D&Expires=1747435247
+fastMRI_breast_IDS_171_180 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_171_180.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=O3W41CeBRS9zZrV7wDNIT46KC%2Bk%3D&Expires=1747435247
+fastMRI_breast_IDS_181_190 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_181_190.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=NZNbZy7CWpsHKiZzXFkZSe%2Br7Bo%3D&Expires=1747435247
+fastMRI_breast_IDS_191_200 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_191_200.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=YJc7Rd6WzZIfYRG1QjEckZkJEUo%3D&Expires=1747435247
+fastMRI_breast_IDS_201_210 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_201_210.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=97J3UdQqARbErcYWfLibiv5rS8s%3D&Expires=1747435247
+fastMRI_breast_IDS_211_220 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_211_220.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=z1whJcx1O0HhqTKbJkYKjP11JR4%3D&Expires=1747435247
+fastMRI_breast_IDS_221_230 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_221_230.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=lx8DY17J1KwFSkb70Xnuc4FtJFM%3D&Expires=1747435247
+fastMRI_breast_IDS_231_240 (~86 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_231_240.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=rp3lZOogzRwjntPOA0iHOE83ZYk%3D&Expires=1747435247
+fastMRI_breast_IDS_241_250 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_241_250.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Nfmyj1%2F9napskqQAnSBzOWf3gxs%3D&Expires=1747435247
+fastMRI_breast_IDS_251_260 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_251_260.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=KBlNhpbr0dYqvc7YjXqyAh%2BK9kg%3D&Expires=1747435247
+fastMRI_breast_IDS_261_270 (~85 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_261_270.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=rE2l%2BiH%2Ft6QrcTNvSnXcDuHBFMY%3D&Expires=1747435247
+fastMRI_breast_IDS_271_280 (~86 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_271_280.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=mbVZuU8CC3NaLez6K0lFVQOZ8Z0%3D&Expires=1747435247
+fastMRI_breast_IDS_281_290 (~86 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_281_290.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=aRo0KlKQvlbU9DldeMyDtB2yVJQ%3D&Expires=1747435247
+fastMRI_breast_IDS_291_300 (~86 GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_291_300.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=07oEUjSsVFzfI7wmhJmaR3W6B1M%3D&Expires=1747435247
+fastMRI_breast_labels (~64KB GB ): https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_labels.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=bZ%2BAZrSqU1CJcNR8juxCkW1LHSQ%3D&Expires=1747435247
+SHA256 Hash (~0.5 KB): https://fastmri-dataset.s3.amazonaws.com/v3.0/SHA256?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=lzehYIh%2F33QVic83rOYKRreu10g%3D&Expires=1747435247
+To download Knee MRI files, we recommend using curl with recovery mode turned on:
+
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_train.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Z59XKieXHYkZzQyn7IiFVk9ld6k%3D&Expires=1747435247" --output knee_singlecoil_train.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_val.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=mqIs%2Bmr51Kb3Q%2FFALd0D4J3aBzM%3D&Expires=1747435247" --output knee_singlecoil_val.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_test.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=FtLnNkuibYYvKIxiLRknMYnpBYQ%3D&Expires=1747435247" --output knee_singlecoil_test.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=CmIHv3ooArtd2SSeruSrFGz%2B7qo%3D&Expires=1747435247" --output knee_multicoil_train_batch_0.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=oprTtV%2Fw58pmFlCO%2B8FgB6ZYFkI%3D&Expires=1747435247" --output knee_multicoil_train_batch_1.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=h1n5hF3FXzFPa1tsOhXtYOqgOio%3D&Expires=1747435247" --output knee_multicoil_train_batch_2.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_3.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=uRiaAzW45arfhfXdqwsz8Ie5tl8%3D&Expires=1747435247" --output knee_multicoil_train_batch_3.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_4.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=W2AVxCAArgr%2FJ46IO7Um0OwsWZ4%3D&Expires=1747435247" --output knee_multicoil_train_batch_4.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_val.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=N74EkKG0aeJ9clHxPWICQzHPaYE%3D&Expires=1747435247" --output knee_multicoil_val.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_test.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=P12ko4O4SKWJ1b%2B%2FbKJmtkYynjQ%3D&Expires=1747435247" --output knee_multicoil_test.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_DICOMs_batch1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=%2BxfNrNX%2BhJGLQkYBpoY6BTAmu7U%3D&Expires=1747435247" --output knee_DICOMs_batch1.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_DICOMs_batch2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=eyrNIUl255pNGfw2GfwbqwWo7os%3D&Expires=1747435247" --output knee_DICOMs_batch2.tar.xz
+
+To download Brain MRI files, we recommend using curl with recovery mode turned on:
+
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=rQWvTJJYRo0JMuZa7kTlObFLZTk%3D&Expires=1747435247" --output brain_multicoil_train_batch_0.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Kf5CMPCKZ7w4sXEiIO05ndsjpw8%3D&Expires=1747435247" --output brain_multicoil_train_batch_1.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=2YBoiHVYWNT1%2F8EgMFn5hgHD%2Bhw%3D&Expires=1747435247" --output brain_multicoil_train_batch_2.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_3.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=cL953Fg6ECnmepx2w7AkJHKdKLI%3D&Expires=1747435247" --output brain_multicoil_train_batch_3.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_4.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=KSVgW7Z5XGfV%2Fx9zgOcZeNwAYbE%3D&Expires=1747435247" --output brain_multicoil_train_batch_4.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_5.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=0qyLPmLDbno2njf%2FTUEzVyhoC7A%3D&Expires=1747435247" --output brain_multicoil_train_batch_5.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_6.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=NeBhee5jVtg65AgoFZhZiI5gmdE%3D&Expires=1747435247" --output brain_multicoil_train_batch_6.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_7.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Spm9oTEonufS9nZBAmObuENIeL4%3D&Expires=1747435247" --output brain_multicoil_train_batch_7.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_8.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=nJUlcG5IkTHOh7c2ng5xr3D6IUI%3D&Expires=1747435247" --output brain_multicoil_train_batch_8.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_9.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=kD1d%2BuMCISeQq55sqtWXbJQb%2FDg%3D&Expires=1747435247" --output brain_multicoil_train_batch_9.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=s7Auk8z%2BR8tPUIb2vH%2F2C45x0B4%3D&Expires=1747435247" --output brain_multicoil_val_batch_0.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Wk1V6l3d1ByiiKO8YREd0c7DotU%3D&Expires=1747435247" --output brain_multicoil_val_batch_1.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=9tWdEm%2FQwC7QWcldCpnA%2BlF5U%2BA%3D&Expires=1747435247" --output brain_multicoil_val_batch_2.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=qullCsy9P%2BNJ4WBi9zAQOLpkls8%3D&Expires=1747435247" --output brain_multicoil_test_batch_0.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=KhWItUpqTh2meah3DnzpIB%2FHw34%3D&Expires=1747435247" --output brain_multicoil_test_batch_1.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=dS4v0%2BqVb%2Bfr1jwCt3ufbVdXH4w%3D&Expires=1747435247" --output brain_multicoil_test_batch_2.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=AumizQZiJlg3VqkS9BqKhqz4w0w%3D&Expires=1747435247" --output brain_multicoil_test_full_batch_0.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Ydbl1meEOkrtCTgwdg6CCrXXSRc%3D&Expires=1747435247" --output brain_multicoil_test_full_batch_1.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=g8JwHxe5G8kXCUms6%2BpVnqfNWM4%3D&Expires=1747435247" --output brain_multicoil_test_full_batch_2.tar.xz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_fastMRI_DICOM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=H5JixBJTKUmmbDdGuW%2BAVXBbKoI%3D&Expires=1747435247" --output brain_fastMRI_DICOM.tar.gz
+
+To download prostate MRI files, we recommend using curl with recovery mode turned on:
+
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/labels.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=i67ysqJ1T7wn4lPLt5BCyFN30Ks%3D&Expires=1747435247" --output labels.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastmri_prostate_DICOMS_IDS_001_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=IlCiq33RiNAGikP80k7GmguZHf0%3D&Expires=1747435247" --output fastmri_prostate_DICOMS_IDS_001_312.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_001_011.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=yc4TZPc6H18CLFskeBqsi4Bak%2Bs%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_001_011.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_012_022.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=65jzob%2FZxltqseDBSkz%2BkEAZYKQ%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_012_022.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_023_033.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=A8DVK2XOhGvAXwUGArmjAWmqj2g%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_023_033.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_034_044.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=3B6HuFZhU3PdaHvUcxRk1uMb2Jg%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_034_044.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_045_055.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=OyDrIk7htULBvHa2T3Ao%2BX3W4R4%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_045_055.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_056_066.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=QXd0cQtS2bYeSCFwCm4DozczVG0%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_056_066.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_067_077.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=8WMlbMJkImOK2onACqjLaTqz%2Fok%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_067_077.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_078_088.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=VwmvuC%2BcM%2F19QA1V%2BF6%2BigZjWgI%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_078_088.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_089_099.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=9noYic9gX%2BhYFNpl0SKgXIerbYo%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_089_099.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_100_110.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=wQeP1RehtDz9q9Jg8%2FStT%2FxlwLU%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_100_110.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_111_121.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=wxM9XyDBHnrSbLN7HhQg3q1Q5T4%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_111_121.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_122_132.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=uG2qnFAWKxly7yh9y%2B3wOz%2FiirQ%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_122_132.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_133_142.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=NuTlM1FMiILQLybC9d%2FDBMTb270%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_133_142.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_143_152.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=ZUfB5VzaQwf001fmk3YVBVDe6tg%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_143_152.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_153_162.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=XWz%2Fq%2FU7wCz8wzOFw5vc9OSKLsg%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_153_162.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_163_172.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=I4GUkBDh0UXg2CihxL9P6Qxgqaw%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_163_172.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_173_182.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=b%2BoVVwH1uHMRjQT0msLNfbIvcXM%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_173_182.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_183_192.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=DjTCyDBeHgEcA8IMQESemwn2l5w%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_183_192.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_193_202.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=YClG%2BWRWyCAFtIWRdHSFxtINnTg%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_193_202.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_203_212.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=gFk10BEvHf%2B3AxV9eiHWPdYMNg0%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_203_212.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_213_222.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=2MuPlNauOp1Io2XCt9vdupuBWE8%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_213_222.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_223_232.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=lz1nOn6YduUqdrS79RH6cTc2C68%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_223_232.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_233_242.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=krodHapmEZl%2FoyKc0mu3DPqZxzc%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_233_242.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_243_252.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=OlZfJtanx%2BnWanbG2P9TPwr5hGs%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_243_252.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_253_262.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Ttym03DBjScst4LSig62pQa%2FL%2BQ%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_253_262.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_263_272.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=FAJRhb66g2JpPT%2FpjD7RPGYzq6c%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_263_272.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_273_282.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=78OhuCEzcJU2b896DeJLyea5tjA%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_273_282.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_283_292.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=TZhaYo2gFCApMjOHSgLBVpLrAv8%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_283_292.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_293_302.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=DWoXB4247VmvTuZEk0h6v%2F9k3g0%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_293_302.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_303_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=du7%2FrfKyJ%2B0Z4z3D6xrCsjiIMUo%3D&Expires=1747435247" --output fastMRI_prostate_DIFF_IDS_303_312.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_001_020.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Fd%2BGluJUBEKohlGigGLuOUTuAFk%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_001_020.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_021_040.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=gVdKnUHCZzqjbTbXUxpjwgzJtYw%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_021_040.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_041_060.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=i0B%2BSE%2FmCiTdHs38XB2Kr2VWdTI%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_041_060.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_061_080.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=QjKbRV8wpkTJEWf3Cq9JKBAorAE%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_061_080.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_081_100.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=BOVHPFLxVsdp5IXfJFDHyuSBELs%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_081_100.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_101_120.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=6pLNNQ2hYpkbTwzb7ezheWPHWsU%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_101_120.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_121_140.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=BlYOSaeHJ0BYSpgRrvcNxeEVnW0%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_121_140.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_141_160.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=AGtgYyrw7P4jazhs3ZdD1GVwPKs%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_141_160.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_161_179.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=ssEYT0fA8uzb9iwLvdMfDZBlUSY%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_161_179.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_180_198.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=FtyuqEK1xUmMrTBSxBMOnRL6%2F9s%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_180_198.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_199_217.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=C3kZZXF2WlHo%2FrDOnEhPSrxvAkk%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_199_217.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_218_236.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=apv%2BsCIFkot309w9RXQeipFukRU%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_218_236.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_237_255.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=oSG%2FxHjD%2FZAHDZ1CYX%2FmCsZ0UIU%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_237_255.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_256_274.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=fApHx8xTZ8XRm1d0DvRtnHj%2BlSE%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_256_274.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_275_293.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Bekk6u3iYcTAGafW%2FoIeclfSN5g%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_275_293.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_294_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Ab2jihXZMz2YulgURscE6A8XRkA%3D&Expires=1747435247" --output fastMRI_prostate_T2_IDS_294_312.tar.gz
+
+To download prostate MRI files, we recommend using curl with recovery mode turned on:
+
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_001_150_DCM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=JJSFzrsr%2FOYVkH0%2BrjpxyVJJY1o%3D&Expires=1747435247" --output fastMRI_breast_IDS_001_150_DCM.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_150_300_DCM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=O5oPusXwfTGde9IMsKxAZNl4Dlg%3D&Expires=1747435247" --output fastMRI_breast_IDS_150_300_DCM.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_001_010.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=RWsCF%2B3WhZ68RVA7CHHeajpYTaY%3D&Expires=1747435247" --output fastMRI_breast_IDS_001_010.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_011_020.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Q0V57bEaa54nc3Q7mmMDpR9Ls%2Bo%3D&Expires=1747435247" --output fastMRI_breast_IDS_011_020.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_021_030.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=SMV2rd6epZCE9pHN8lMnXfKTvr8%3D&Expires=1747435247" --output fastMRI_breast_IDS_021_030.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_031_040.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=SCBcJWtY6wfF835ZtkQSSXrQJZ8%3D&Expires=1747435247" --output fastMRI_breast_IDS_031_040.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_041_050.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=9uod2UPnqXVoh19OrAOLz3wbjug%3D&Expires=1747435247" --output fastMRI_breast_IDS_041_050.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_051_060.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=zp8KVaB3XrsvW%2FsziqZFv0XsS%2Bk%3D&Expires=1747435247" --output fastMRI_breast_IDS_051_060.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_061_070.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=K%2BLZzMUTIj1NoSMJJdDMlcoMotg%3D&Expires=1747435247" --output fastMRI_breast_IDS_061_070.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_071_080.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=3KpM7dQadfZAFfNkDQn8QxNhAXk%3D&Expires=1747435247" --output fastMRI_breast_IDS_071_080.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_081_090.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=%2FrEXKH62JjizjvoV2ZpFxbBnfhg%3D&Expires=1747435247" --output fastMRI_breast_IDS_081_090.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_091_100.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Mnc5C7RJ7%2F4e5Y4OgN6EFbu%2F1Kk%3D&Expires=1747435247" --output fastMRI_breast_IDS_091_100.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_101_110.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=%2FU1JyLDKAXJMFVYSWoYFmnt5uIg%3D&Expires=1747435247" --output fastMRI_breast_IDS_101_110.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_111_120.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=PfumSmvqVtRCMh%2FUoLYHGTZR3Xc%3D&Expires=1747435247" --output fastMRI_breast_IDS_111_120.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_121_130.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=CPYBCrw8%2FFOp%2BUsDGuQHY59KzIY%3D&Expires=1747435247" --output fastMRI_breast_IDS_121_130.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_131_140.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=dmZjD9z8dJRknF5moH8DoredSpE%3D&Expires=1747435247" --output fastMRI_breast_IDS_131_140.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_141_150.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=iN4TJ97jb0llMwCv5hBmSLykQFk%3D&Expires=1747435247" --output fastMRI_breast_IDS_141_150.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_151_160.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=KBuyK2iw3H7mHqESluP%2B7mWYlIs%3D&Expires=1747435247" --output fastMRI_breast_IDS_151_160.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_161_170.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=cueV4DXQLkfDh6AMkOT2Xk6Dd90%3D&Expires=1747435247" --output fastMRI_breast_IDS_161_170.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_171_180.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=O3W41CeBRS9zZrV7wDNIT46KC%2Bk%3D&Expires=1747435247" --output fastMRI_breast_IDS_171_180.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_181_190.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=NZNbZy7CWpsHKiZzXFkZSe%2Br7Bo%3D&Expires=1747435247" --output fastMRI_breast_IDS_181_190.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_191_200.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=YJc7Rd6WzZIfYRG1QjEckZkJEUo%3D&Expires=1747435247" --output fastMRI_breast_IDS_191_200.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_201_210.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=97J3UdQqARbErcYWfLibiv5rS8s%3D&Expires=1747435247" --output fastMRI_breast_IDS_201_210.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_211_220.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=z1whJcx1O0HhqTKbJkYKjP11JR4%3D&Expires=1747435247" --output fastMRI_breast_IDS_211_220.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_221_230.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=lx8DY17J1KwFSkb70Xnuc4FtJFM%3D&Expires=1747435247" --output fastMRI_breast_IDS_221_230.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_231_240.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=rp3lZOogzRwjntPOA0iHOE83ZYk%3D&Expires=1747435247" --output fastMRI_breast_IDS_231_240.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_241_250.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=Nfmyj1%2F9napskqQAnSBzOWf3gxs%3D&Expires=1747435247" --output fastMRI_breast_IDS_241_250.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_251_260.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=KBlNhpbr0dYqvc7YjXqyAh%2BK9kg%3D&Expires=1747435247" --output fastMRI_breast_IDS_251_260.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_261_270.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=rE2l%2BiH%2Ft6QrcTNvSnXcDuHBFMY%3D&Expires=1747435247" --output fastMRI_breast_IDS_261_270.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_271_280.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=mbVZuU8CC3NaLez6K0lFVQOZ8Z0%3D&Expires=1747435247" --output fastMRI_breast_IDS_271_280.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_281_290.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=aRo0KlKQvlbU9DldeMyDtB2yVJQ%3D&Expires=1747435247" --output fastMRI_breast_IDS_281_290.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_291_300.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=07oEUjSsVFzfI7wmhJmaR3W6B1M%3D&Expires=1747435247" --output fastMRI_breast_IDS_291_300.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_labels.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=bZ%2BAZrSqU1CJcNR8juxCkW1LHSQ%3D&Expires=1747435247" --output fastMRI_breast_labels.tar.gz
+curl -C - "https://fastmri-dataset.s3.amazonaws.com/v3.0/SHA256?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=lzehYIh%2F33QVic83rOYKRreu10g%3D&Expires=1747435247" --output SHA256
+
+For your reference, you can go to https://fastmri.med.nyu.edu for informationon how to cite us as well as a copy of the data use agreement.
+
+Best,
+NYU Radiology
+--===============8162749054337002200==
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii"></head>
+    <body>
+      <p>
+             Jan Panjan,<br><br>
+             Here are the links you requested. Please note the below urls expire in 90 days; if additional time is needed or you would like to download the files again, you will need to submit a new request on https://fastmri.med.nyu.edu:<br><br>
+             Knee MRI:<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_train.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Z59XKieXHYkZzQyn7IiFVk9ld6k%3D&amp;Expires=1747435247">knee_singlecoil_train</a> (~72.7 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_val.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=mqIs%2Bmr51Kb3Q%2FFALd0D4J3aBzM%3D&amp;Expires=1747435247">knee_singlecoil_val</a> (~14.9 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_test.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=FtLnNkuibYYvKIxiLRknMYnpBYQ%3D&amp;Expires=1747435247">knee_singlecoil_test</a> (~1.4 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=CmIHv3ooArtd2SSeruSrFGz%2B7qo%3D&amp;Expires=1747435247">knee_multicoil_train_batch_0</a> (~91.1 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=oprTtV%2Fw58pmFlCO%2B8FgB6ZYFkI%3D&amp;Expires=1747435247">knee_multicoil_train_batch_1</a> (~92.1 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=h1n5hF3FXzFPa1tsOhXtYOqgOio%3D&amp;Expires=1747435247">knee_multicoil_train_batch_2</a> (~90.7 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_3.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=uRiaAzW45arfhfXdqwsz8Ie5tl8%3D&amp;Expires=1747435247">knee_multicoil_train_batch_3</a> (~90.4 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_4.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=W2AVxCAArgr%2FJ46IO7Um0OwsWZ4%3D&amp;Expires=1747435247">knee_multicoil_train_batch_4</a> (~91.0 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_val.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=N74EkKG0aeJ9clHxPWICQzHPaYE%3D&amp;Expires=1747435247">knee_multicoil_val</a> (~93.8 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_test.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=P12ko4O4SKWJ1b%2B%2FbKJmtkYynjQ%3D&amp;Expires=1747435247">knee_multicoil_test</a> (~16 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_DICOMs_batch1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=%2BxfNrNX%2BhJGLQkYBpoY6BTAmu7U%3D&amp;Expires=1747435247">knee_DICOMs_batch1</a> (~134 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_DICOMs_batch2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=eyrNIUl255pNGfw2GfwbqwWo7os%3D&amp;Expires=1747435247">knee_DICOMs_batch2</a> (~30 GB)<br>
+             <br>
+             Brain MRI:<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=rQWvTJJYRo0JMuZa7kTlObFLZTk%3D&amp;Expires=1747435247">brain_multicoil_train_batch_0</a> (~98.5 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Kf5CMPCKZ7w4sXEiIO05ndsjpw8%3D&amp;Expires=1747435247">brain_multicoil_train_batch_1</a> (~92.1 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=2YBoiHVYWNT1%2F8EgMFn5hgHD%2Bhw%3D&amp;Expires=1747435247">brain_multicoil_train_batch_2</a> (~92.6 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_3.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=cL953Fg6ECnmepx2w7AkJHKdKLI%3D&amp;Expires=1747435247">brain_multicoil_train_batch_3</a> (~95.5 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_4.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=KSVgW7Z5XGfV%2Fx9zgOcZeNwAYbE%3D&amp;Expires=1747435247">brain_multicoil_train_batch_4</a> (~92.7 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_5.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=0qyLPmLDbno2njf%2FTUEzVyhoC7A%3D&amp;Expires=1747435247">brain_multicoil_train_batch_5</a> (~94.3 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_6.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=NeBhee5jVtg65AgoFZhZiI5gmdE%3D&amp;Expires=1747435247">brain_multicoil_train_batch_6</a> (~99.1 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_7.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Spm9oTEonufS9nZBAmObuENIeL4%3D&amp;Expires=1747435247">brain_multicoil_train_batch_7</a> (~95.7 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_8.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=nJUlcG5IkTHOh7c2ng5xr3D6IUI%3D&amp;Expires=1747435247">brain_multicoil_train_batch_8</a> (~97.5 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_9.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=kD1d%2BuMCISeQq55sqtWXbJQb%2FDg%3D&amp;Expires=1747435247">brain_multicoil_train_batch_9</a> (~88.3 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=s7Auk8z%2BR8tPUIb2vH%2F2C45x0B4%3D&amp;Expires=1747435247">brain_multicoil_val_batch_0</a> (~93.5 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Wk1V6l3d1ByiiKO8YREd0c7DotU%3D&amp;Expires=1747435247">brain_multicoil_val_batch_1</a> (~88.7 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=9tWdEm%2FQwC7QWcldCpnA%2BlF5U%2BA%3D&amp;Expires=1747435247">brain_multicoil_val_batch_2</a> (~93.8 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=qullCsy9P%2BNJ4WBi9zAQOLpkls8%3D&amp;Expires=1747435247">brain_multicoil_test_batch_0</a> (~9.2 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=KhWItUpqTh2meah3DnzpIB%2FHw34%3D&amp;Expires=1747435247">brain_multicoil_test_batch_1</a> (~8.6 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=dS4v0%2BqVb%2Bfr1jwCt3ufbVdXH4w%3D&amp;Expires=1747435247">brain_multicoil_test_batch_2</a> (~8.5 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=AumizQZiJlg3VqkS9BqKhqz4w0w%3D&amp;Expires=1747435247">brain_multicoil_test_full_batch_0</a> (~39.4 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Ydbl1meEOkrtCTgwdg6CCrXXSRc%3D&amp;Expires=1747435247">brain_multicoil_test_full_batch_1</a> (~38.4 GB)<br>
+			 <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=g8JwHxe5G8kXCUms6%2BpVnqfNWM4%3D&amp;Expires=1747435247">brain_multicoil_test_full_batch_2</a> (~35.8 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_fastMRI_DICOM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=H5JixBJTKUmmbDdGuW%2BAVXBbKoI%3D&amp;Expires=1747435247">brain_fastMRI_DICOM</a> (~38.8 GB)<br>
+             <br>
+             Prostate MRI:<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/labels.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=i67ysqJ1T7wn4lPLt5BCyFN30Ks%3D&amp;Expires=1747435247">labels</a> (~0.01 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastmri_prostate_DICOMS_IDS_001_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=IlCiq33RiNAGikP80k7GmguZHf0%3D&amp;Expires=1747435247">fastmri_prostate_DICOMS_IDS_001_312</a> (~1.9 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_001_011.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=yc4TZPc6H18CLFskeBqsi4Bak%2Bs%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_001_011</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_012_022.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=65jzob%2FZxltqseDBSkz%2BkEAZYKQ%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_012_022</a> (~33 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_023_033.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=A8DVK2XOhGvAXwUGArmjAWmqj2g%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_023_033</a> (~33 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_034_044.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=3B6HuFZhU3PdaHvUcxRk1uMb2Jg%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_034_044</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_045_055.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=OyDrIk7htULBvHa2T3Ao%2BX3W4R4%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_045_055</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_056_066.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=QXd0cQtS2bYeSCFwCm4DozczVG0%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_056_066</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_067_077.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=8WMlbMJkImOK2onACqjLaTqz%2Fok%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_067_077</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_078_088.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=VwmvuC%2BcM%2F19QA1V%2BF6%2BigZjWgI%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_078_088</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_089_099.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=9noYic9gX%2BhYFNpl0SKgXIerbYo%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_089_099</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_100_110.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=wQeP1RehtDz9q9Jg8%2FStT%2FxlwLU%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_100_110</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_111_121.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=wxM9XyDBHnrSbLN7HhQg3q1Q5T4%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_111_121</a> (~29 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_122_132.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=uG2qnFAWKxly7yh9y%2B3wOz%2FiirQ%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_122_132</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_133_142.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=NuTlM1FMiILQLybC9d%2FDBMTb270%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_133_142</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_143_152.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=ZUfB5VzaQwf001fmk3YVBVDe6tg%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_143_152</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_153_162.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=XWz%2Fq%2FU7wCz8wzOFw5vc9OSKLsg%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_153_162</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_163_172.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=I4GUkBDh0UXg2CihxL9P6Qxgqaw%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_163_172</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_173_182.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=b%2BoVVwH1uHMRjQT0msLNfbIvcXM%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_173_182</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_183_192.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=DjTCyDBeHgEcA8IMQESemwn2l5w%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_183_192</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_193_202.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=YClG%2BWRWyCAFtIWRdHSFxtINnTg%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_193_202</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_203_212.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=gFk10BEvHf%2B3AxV9eiHWPdYMNg0%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_203_212</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_213_222.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=2MuPlNauOp1Io2XCt9vdupuBWE8%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_213_222</a> (~33 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_223_232.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=lz1nOn6YduUqdrS79RH6cTc2C68%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_223_232</a> (~34 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_233_242.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=krodHapmEZl%2FoyKc0mu3DPqZxzc%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_233_242</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_243_252.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=OlZfJtanx%2BnWanbG2P9TPwr5hGs%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_243_252</a> (~29 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_253_262.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Ttym03DBjScst4LSig62pQa%2FL%2BQ%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_253_262</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_263_272.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=FAJRhb66g2JpPT%2FpjD7RPGYzq6c%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_263_272</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_273_282.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=78OhuCEzcJU2b896DeJLyea5tjA%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_273_282</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_283_292.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=TZhaYo2gFCApMjOHSgLBVpLrAv8%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_283_292</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_293_302.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=DWoXB4247VmvTuZEk0h6v%2F9k3g0%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_293_302</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_303_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=du7%2FrfKyJ%2B0Z4z3D6xrCsjiIMUo%3D&amp;Expires=1747435247">fastMRI_prostate_DIFF_IDS_303_312</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_001_020.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Fd%2BGluJUBEKohlGigGLuOUTuAFk%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_001_020</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_021_040.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=gVdKnUHCZzqjbTbXUxpjwgzJtYw%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_021_040</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_041_060.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=i0B%2BSE%2FmCiTdHs38XB2Kr2VWdTI%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_041_060</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_061_080.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=QjKbRV8wpkTJEWf3Cq9JKBAorAE%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_061_080</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_081_100.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=BOVHPFLxVsdp5IXfJFDHyuSBELs%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_081_100</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_101_120.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=6pLNNQ2hYpkbTwzb7ezheWPHWsU%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_101_120</a> (~33 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_121_140.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=BlYOSaeHJ0BYSpgRrvcNxeEVnW0%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_121_140</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_141_160.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=AGtgYyrw7P4jazhs3ZdD1GVwPKs%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_141_160</a> (~30 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_161_179.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=ssEYT0fA8uzb9iwLvdMfDZBlUSY%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_161_179</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_180_198.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=FtyuqEK1xUmMrTBSxBMOnRL6%2F9s%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_180_198</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_199_217.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=C3kZZXF2WlHo%2FrDOnEhPSrxvAkk%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_199_217</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_218_236.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=apv%2BsCIFkot309w9RXQeipFukRU%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_218_236</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_237_255.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=oSG%2FxHjD%2FZAHDZ1CYX%2FmCsZ0UIU%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_237_255</a> (~29 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_256_274.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=fApHx8xTZ8XRm1d0DvRtnHj%2BlSE%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_256_274</a> (~32 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_275_293.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Bekk6u3iYcTAGafW%2FoIeclfSN5g%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_275_293</a> (~31 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_294_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Ab2jihXZMz2YulgURscE6A8XRkA%3D&amp;Expires=1747435247">fastMRI_prostate_T2_IDS_294_312</a> (~33 GB)<br>
+             <br>
+             Breast MRI:<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_001_150_DCM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=JJSFzrsr%2FOYVkH0%2BrjpxyVJJY1o%3D&amp;Expires=1747435247">fastMRI_breast_IDS_001_150_DCM</a> (~57 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_150_300_DCM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=O5oPusXwfTGde9IMsKxAZNl4Dlg%3D&amp;Expires=1747435247">fastMRI_breast_IDS_150_300_DCM</a> (~57 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_001_010.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=RWsCF%2B3WhZ68RVA7CHHeajpYTaY%3D&amp;Expires=1747435247">fastMRI_breast_IDS_001_010</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_011_020.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Q0V57bEaa54nc3Q7mmMDpR9Ls%2Bo%3D&amp;Expires=1747435247">fastMRI_breast_IDS_011_020</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_021_030.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=SMV2rd6epZCE9pHN8lMnXfKTvr8%3D&amp;Expires=1747435247">fastMRI_breast_IDS_021_030</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_031_040.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=SCBcJWtY6wfF835ZtkQSSXrQJZ8%3D&amp;Expires=1747435247">fastMRI_breast_IDS_031_040</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_041_050.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=9uod2UPnqXVoh19OrAOLz3wbjug%3D&amp;Expires=1747435247">fastMRI_breast_IDS_041_050</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_051_060.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=zp8KVaB3XrsvW%2FsziqZFv0XsS%2Bk%3D&amp;Expires=1747435247">fastMRI_breast_IDS_051_060</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_061_070.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=K%2BLZzMUTIj1NoSMJJdDMlcoMotg%3D&amp;Expires=1747435247">fastMRI_breast_IDS_061_070</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_071_080.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=3KpM7dQadfZAFfNkDQn8QxNhAXk%3D&amp;Expires=1747435247">fastMRI_breast_IDS_071_080</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_081_090.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=%2FrEXKH62JjizjvoV2ZpFxbBnfhg%3D&amp;Expires=1747435247">fastMRI_breast_IDS_081_090</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_091_100.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Mnc5C7RJ7%2F4e5Y4OgN6EFbu%2F1Kk%3D&amp;Expires=1747435247">fastMRI_breast_IDS_091_100</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_101_110.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=%2FU1JyLDKAXJMFVYSWoYFmnt5uIg%3D&amp;Expires=1747435247">fastMRI_breast_IDS_101_110</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_111_120.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=PfumSmvqVtRCMh%2FUoLYHGTZR3Xc%3D&amp;Expires=1747435247">fastMRI_breast_IDS_111_120</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_121_130.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=CPYBCrw8%2FFOp%2BUsDGuQHY59KzIY%3D&amp;Expires=1747435247">fastMRI_breast_IDS_121_130</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_131_140.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=dmZjD9z8dJRknF5moH8DoredSpE%3D&amp;Expires=1747435247">fastMRI_breast_IDS_131_140</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_141_150.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=iN4TJ97jb0llMwCv5hBmSLykQFk%3D&amp;Expires=1747435247">fastMRI_breast_IDS_141_150</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_151_160.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=KBuyK2iw3H7mHqESluP%2B7mWYlIs%3D&amp;Expires=1747435247">fastMRI_breast_IDS_151_160</a> (~86 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_161_170.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=cueV4DXQLkfDh6AMkOT2Xk6Dd90%3D&amp;Expires=1747435247">fastMRI_breast_IDS_161_170</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_171_180.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=O3W41CeBRS9zZrV7wDNIT46KC%2Bk%3D&amp;Expires=1747435247">fastMRI_breast_IDS_171_180</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_181_190.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=NZNbZy7CWpsHKiZzXFkZSe%2Br7Bo%3D&amp;Expires=1747435247">fastMRI_breast_IDS_181_190</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_191_200.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=YJc7Rd6WzZIfYRG1QjEckZkJEUo%3D&amp;Expires=1747435247">fastMRI_breast_IDS_191_200</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_201_210.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=97J3UdQqARbErcYWfLibiv5rS8s%3D&amp;Expires=1747435247">fastMRI_breast_IDS_201_210</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_211_220.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=z1whJcx1O0HhqTKbJkYKjP11JR4%3D&amp;Expires=1747435247">fastMRI_breast_IDS_211_220</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_221_230.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=lx8DY17J1KwFSkb70Xnuc4FtJFM%3D&amp;Expires=1747435247">fastMRI_breast_IDS_221_230</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_231_240.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=rp3lZOogzRwjntPOA0iHOE83ZYk%3D&amp;Expires=1747435247">fastMRI_breast_IDS_231_240</a> (~86 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_241_250.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Nfmyj1%2F9napskqQAnSBzOWf3gxs%3D&amp;Expires=1747435247">fastMRI_breast_IDS_241_250</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_251_260.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=KBlNhpbr0dYqvc7YjXqyAh%2BK9kg%3D&amp;Expires=1747435247">fastMRI_breast_IDS_251_260</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_261_270.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=rE2l%2BiH%2Ft6QrcTNvSnXcDuHBFMY%3D&amp;Expires=1747435247">fastMRI_breast_IDS_261_270</a> (~85 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_271_280.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=mbVZuU8CC3NaLez6K0lFVQOZ8Z0%3D&amp;Expires=1747435247">fastMRI_breast_IDS_271_280</a> (~86 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_281_290.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=aRo0KlKQvlbU9DldeMyDtB2yVJQ%3D&amp;Expires=1747435247">fastMRI_breast_IDS_281_290</a> (~86 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_291_300.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=07oEUjSsVFzfI7wmhJmaR3W6B1M%3D&amp;Expires=1747435247">fastMRI_breast_IDS_291_300</a> (~86 GB)<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_labels.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=bZ%2BAZrSqU1CJcNR8juxCkW1LHSQ%3D&amp;Expires=1747435247">fastMRI_breast_labels</a> (~64 KB)<br>
+             <br>
+             SHA256 Hash:<br>
+             <a href="https://fastmri-dataset.s3.amazonaws.com/v3.0/SHA256?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=lzehYIh%2F33QVic83rOYKRreu10g%3D&amp;Expires=1747435247">SHA256 Hash</a> (0.5 KB)<br>
+             <br>
+             To download Knee MRI files, we recommend using curl with recovery mode turned on:<br>
+             <br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_train.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Z59XKieXHYkZzQyn7IiFVk9ld6k%3D&amp;Expires=1747435247&quot; --output knee_singlecoil_train.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_val.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=mqIs%2Bmr51Kb3Q%2FFALd0D4J3aBzM%3D&amp;Expires=1747435247&quot; --output knee_singlecoil_val.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_test.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=FtLnNkuibYYvKIxiLRknMYnpBYQ%3D&amp;Expires=1747435247&quot; --output knee_singlecoil_test_v2.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=CmIHv3ooArtd2SSeruSrFGz%2B7qo%3D&amp;Expires=1747435247&quot; --output knee_multicoil_train_batch_0.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=oprTtV%2Fw58pmFlCO%2B8FgB6ZYFkI%3D&amp;Expires=1747435247&quot; --output knee_multicoil_train_batch_1.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=h1n5hF3FXzFPa1tsOhXtYOqgOio%3D&amp;Expires=1747435247&quot; --output knee_multicoil_train_batch_2.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_3.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=uRiaAzW45arfhfXdqwsz8Ie5tl8%3D&amp;Expires=1747435247&quot; --output knee_multicoil_train_batch_3.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_train_batch_4.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=W2AVxCAArgr%2FJ46IO7Um0OwsWZ4%3D&amp;Expires=1747435247&quot; --output knee_multicoil_train_batch_4.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_val.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=N74EkKG0aeJ9clHxPWICQzHPaYE%3D&amp;Expires=1747435247&quot; --output knee_multicoil_val.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_multicoil_test.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=P12ko4O4SKWJ1b%2B%2FbKJmtkYynjQ%3D&amp;Expires=1747435247&quot; --output knee_multicoil_test.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_DICOMs_batch1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=%2BxfNrNX%2BhJGLQkYBpoY6BTAmu7U%3D&amp;Expires=1747435247&quot; --output knee_DICOMs_batch1.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_DICOMs_batch2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=eyrNIUl255pNGfw2GfwbqwWo7os%3D&amp;Expires=1747435247&quot; --output knee_DICOMs_batch2.tar.xz<br>
+             <br>
+             To download Brain MRI files, we recommend using curl with recovery mode turned on:<br>
+             <br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=rQWvTJJYRo0JMuZa7kTlObFLZTk%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_0.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Kf5CMPCKZ7w4sXEiIO05ndsjpw8%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_1.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=2YBoiHVYWNT1%2F8EgMFn5hgHD%2Bhw%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_2.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_3.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=cL953Fg6ECnmepx2w7AkJHKdKLI%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_3.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_4.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=KSVgW7Z5XGfV%2Fx9zgOcZeNwAYbE%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_4.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_5.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=0qyLPmLDbno2njf%2FTUEzVyhoC7A%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_5.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_6.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=NeBhee5jVtg65AgoFZhZiI5gmdE%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_6.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_7.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Spm9oTEonufS9nZBAmObuENIeL4%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_7.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_8.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=nJUlcG5IkTHOh7c2ng5xr3D6IUI%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_8.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_train_batch_9.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=kD1d%2BuMCISeQq55sqtWXbJQb%2FDg%3D&amp;Expires=1747435247&quot; --output brain_multicoil_train_batch_9.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=s7Auk8z%2BR8tPUIb2vH%2F2C45x0B4%3D&amp;Expires=1747435247&quot; --output brain_multicoil_val_batch_0.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Wk1V6l3d1ByiiKO8YREd0c7DotU%3D&amp;Expires=1747435247&quot; --output brain_multicoil_val_batch_1.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_val_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=9tWdEm%2FQwC7QWcldCpnA%2BlF5U%2BA%3D&amp;Expires=1747435247&quot; --output brain_multicoil_val_batch_2.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=qullCsy9P%2BNJ4WBi9zAQOLpkls8%3D&amp;Expires=1747435247&quot; --output brain_multicoil_test_batch_0.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=KhWItUpqTh2meah3DnzpIB%2FHw34%3D&amp;Expires=1747435247&quot; --output brain_multicoil_test_batch_1.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=dS4v0%2BqVb%2Bfr1jwCt3ufbVdXH4w%3D&amp;Expires=1747435247&quot; --output brain_multicoil_test_batch_2.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_0.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=AumizQZiJlg3VqkS9BqKhqz4w0w%3D&amp;Expires=1747435247&quot; --output brain_multicoil_test_full_batch_0.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_1.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Ydbl1meEOkrtCTgwdg6CCrXXSRc%3D&amp;Expires=1747435247&quot; --output brain_multicoil_test_full_batch_1.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_multicoil_test_full_batch_2.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=g8JwHxe5G8kXCUms6%2BpVnqfNWM4%3D&amp;Expires=1747435247&quot; --output brain_multicoil_test_full_batch_2.tar.xz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v2.0/brain_fastMRI_DICOM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=H5JixBJTKUmmbDdGuW%2BAVXBbKoI%3D&amp;Expires=1747435247&quot; --output brain_fastMRI_DICOM.tar.gz<br>
+             <br>
+             To download prostate MRI files, we recommend using curl with recovery mode turned on:<br>
+             <br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/labels.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=i67ysqJ1T7wn4lPLt5BCyFN30Ks%3D&amp;Expires=1747435247&quot; --output labels.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastmri_prostate_DICOMS_IDS_001_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=IlCiq33RiNAGikP80k7GmguZHf0%3D&amp;Expires=1747435247&quot; --output fastmri_prostate_DICOMS_IDS_001_312.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_001_011.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=yc4TZPc6H18CLFskeBqsi4Bak%2Bs%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_001_011.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_012_022.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=65jzob%2FZxltqseDBSkz%2BkEAZYKQ%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_012_022.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_023_033.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=A8DVK2XOhGvAXwUGArmjAWmqj2g%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_023_033.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_034_044.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=3B6HuFZhU3PdaHvUcxRk1uMb2Jg%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_034_044.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_045_055.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=OyDrIk7htULBvHa2T3Ao%2BX3W4R4%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_045_055.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_056_066.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=QXd0cQtS2bYeSCFwCm4DozczVG0%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_056_066.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_067_077.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=8WMlbMJkImOK2onACqjLaTqz%2Fok%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_067_077.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_078_088.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=VwmvuC%2BcM%2F19QA1V%2BF6%2BigZjWgI%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_078_088.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_089_099.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=9noYic9gX%2BhYFNpl0SKgXIerbYo%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_089_099.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_100_110.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=wQeP1RehtDz9q9Jg8%2FStT%2FxlwLU%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_100_110.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_111_121.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=wxM9XyDBHnrSbLN7HhQg3q1Q5T4%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_111_121.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_122_132.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=uG2qnFAWKxly7yh9y%2B3wOz%2FiirQ%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_122_132.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_133_142.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=NuTlM1FMiILQLybC9d%2FDBMTb270%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_133_142.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_143_152.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=ZUfB5VzaQwf001fmk3YVBVDe6tg%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_143_152.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_153_162.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=XWz%2Fq%2FU7wCz8wzOFw5vc9OSKLsg%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_153_162.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_163_172.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=I4GUkBDh0UXg2CihxL9P6Qxgqaw%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_163_172.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_173_182.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=b%2BoVVwH1uHMRjQT0msLNfbIvcXM%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_173_182.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_183_192.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=DjTCyDBeHgEcA8IMQESemwn2l5w%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_183_192.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_193_202.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=YClG%2BWRWyCAFtIWRdHSFxtINnTg%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_193_202.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_203_212.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=gFk10BEvHf%2B3AxV9eiHWPdYMNg0%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_203_212.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_213_222.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=2MuPlNauOp1Io2XCt9vdupuBWE8%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_213_222.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_223_232.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=lz1nOn6YduUqdrS79RH6cTc2C68%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_223_232.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_233_242.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=krodHapmEZl%2FoyKc0mu3DPqZxzc%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_233_242.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_243_252.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=OlZfJtanx%2BnWanbG2P9TPwr5hGs%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_243_252.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_253_262.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Ttym03DBjScst4LSig62pQa%2FL%2BQ%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_253_262.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_263_272.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=FAJRhb66g2JpPT%2FpjD7RPGYzq6c%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_263_272.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_273_282.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=78OhuCEzcJU2b896DeJLyea5tjA%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_273_282.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_283_292.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=TZhaYo2gFCApMjOHSgLBVpLrAv8%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_283_292.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_293_302.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=DWoXB4247VmvTuZEk0h6v%2F9k3g0%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_293_302.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_DIFF_IDS_303_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=du7%2FrfKyJ%2B0Z4z3D6xrCsjiIMUo%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_DIFF_IDS_303_312.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_001_020.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Fd%2BGluJUBEKohlGigGLuOUTuAFk%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_001_020.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_021_040.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=gVdKnUHCZzqjbTbXUxpjwgzJtYw%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_021_040.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_041_060.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=i0B%2BSE%2FmCiTdHs38XB2Kr2VWdTI%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_041_060.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_061_080.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=QjKbRV8wpkTJEWf3Cq9JKBAorAE%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_061_080.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_081_100.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=BOVHPFLxVsdp5IXfJFDHyuSBELs%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_081_100.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_101_120.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=6pLNNQ2hYpkbTwzb7ezheWPHWsU%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_101_120.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_121_140.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=BlYOSaeHJ0BYSpgRrvcNxeEVnW0%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_121_140.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_141_160.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=AGtgYyrw7P4jazhs3ZdD1GVwPKs%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_141_160.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_161_179.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=ssEYT0fA8uzb9iwLvdMfDZBlUSY%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_161_179.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_180_198.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=FtyuqEK1xUmMrTBSxBMOnRL6%2F9s%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_180_198.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_199_217.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=C3kZZXF2WlHo%2FrDOnEhPSrxvAkk%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_199_217.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_218_236.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=apv%2BsCIFkot309w9RXQeipFukRU%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_218_236.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_237_255.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=oSG%2FxHjD%2FZAHDZ1CYX%2FmCsZ0UIU%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_237_255.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_256_274.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=fApHx8xTZ8XRm1d0DvRtnHj%2BlSE%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_256_274.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_275_293.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Bekk6u3iYcTAGafW%2FoIeclfSN5g%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_275_293.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/fastMRI_prostate_T2_IDS_294_312.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Ab2jihXZMz2YulgURscE6A8XRkA%3D&amp;Expires=1747435247&quot; --output fastMRI_prostate_T2_IDS_294_312.tar.gz<br>
+             <br>
+             <br>
+             To download Brain MRI files, we recommend using curl with recovery mode turned on:<br>
+             <br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_001_150_DCM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=JJSFzrsr%2FOYVkH0%2BrjpxyVJJY1o%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_001_150_DCM.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_150_300_DCM.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=O5oPusXwfTGde9IMsKxAZNl4Dlg%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_150_300_DCM.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_001_010.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=RWsCF%2B3WhZ68RVA7CHHeajpYTaY%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_001_010.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_011_020.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Q0V57bEaa54nc3Q7mmMDpR9Ls%2Bo%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_011_020.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_021_030.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=SMV2rd6epZCE9pHN8lMnXfKTvr8%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_021_030.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_031_040.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=SCBcJWtY6wfF835ZtkQSSXrQJZ8%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_031_040.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_041_050.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=9uod2UPnqXVoh19OrAOLz3wbjug%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_041_050.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_051_060.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=zp8KVaB3XrsvW%2FsziqZFv0XsS%2Bk%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_051_060.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_061_070.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=K%2BLZzMUTIj1NoSMJJdDMlcoMotg%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_061_070.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_071_080.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=3KpM7dQadfZAFfNkDQn8QxNhAXk%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_071_080.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_081_090.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=%2FrEXKH62JjizjvoV2ZpFxbBnfhg%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_081_090.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_091_100.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Mnc5C7RJ7%2F4e5Y4OgN6EFbu%2F1Kk%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_091_100.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_101_110.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=%2FU1JyLDKAXJMFVYSWoYFmnt5uIg%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_101_110.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_111_120.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=PfumSmvqVtRCMh%2FUoLYHGTZR3Xc%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_111_120.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_121_130.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=CPYBCrw8%2FFOp%2BUsDGuQHY59KzIY%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_121_130.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_131_140.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=dmZjD9z8dJRknF5moH8DoredSpE%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_131_140.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_141_150.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=iN4TJ97jb0llMwCv5hBmSLykQFk%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_141_150.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_151_160.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=KBuyK2iw3H7mHqESluP%2B7mWYlIs%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_151_160.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_161_170.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=cueV4DXQLkfDh6AMkOT2Xk6Dd90%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_161_170.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_171_180.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=O3W41CeBRS9zZrV7wDNIT46KC%2Bk%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_171_180.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_181_190.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=NZNbZy7CWpsHKiZzXFkZSe%2Br7Bo%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_181_190.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_191_200.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=YJc7Rd6WzZIfYRG1QjEckZkJEUo%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_191_200.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_201_210.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=97J3UdQqARbErcYWfLibiv5rS8s%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_201_210.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_211_220.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=z1whJcx1O0HhqTKbJkYKjP11JR4%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_211_220.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_221_230.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=lx8DY17J1KwFSkb70Xnuc4FtJFM%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_221_230.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_231_240.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=rp3lZOogzRwjntPOA0iHOE83ZYk%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_231_240.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_241_250.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=Nfmyj1%2F9napskqQAnSBzOWf3gxs%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_241_250.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_251_260.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=KBlNhpbr0dYqvc7YjXqyAh%2BK9kg%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_251_260.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_261_270.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=rE2l%2BiH%2Ft6QrcTNvSnXcDuHBFMY%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_261_270.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_271_280.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=mbVZuU8CC3NaLez6K0lFVQOZ8Z0%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_271_280.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_281_290.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=aRo0KlKQvlbU9DldeMyDtB2yVJQ%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_281_290.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_IDS_291_300.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=07oEUjSsVFzfI7wmhJmaR3W6B1M%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_IDS_291_300.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v4.0/fastMRI_breast_labels.tar.gz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=bZ%2BAZrSqU1CJcNR8juxCkW1LHSQ%3D&amp;Expires=1747435247&quot; --output fastMRI_breast_labels.tar.gz<br>
+             curl -C - &quot;https://fastmri-dataset.s3.amazonaws.com/v3.0/SHA256?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&amp;Signature=lzehYIh%2F33QVic83rOYKRreu10g%3D&amp;Expires=1747435247&quot; --output SHA256<br>
+             <br>
+             
+
+             For your reference, you can go to <a href="https://fastmri.med.nyu.edu">https://fastmri.med.nyu.edu</a> for information
+             on how to cite us as well as a copy of the data use agreement.<br>
+             <br>
+             Best,<br>
+             NYU Radiology
+        </p>
+    </body>
+    </html>
+                
+--===============8162749054337002200==--

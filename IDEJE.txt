@@ -3,3 +3,6 @@ Segmentation of MR Brain Images
 
 Super-resolution of magnetic resonance images using Generative Adversarial Networks
 [https://www.sciencedirect.com/science/article/abs/pii/S0895611123000988]
+
+fastMRI prostate github
+[https://github.com/cai2r/fastMRI_prostate]

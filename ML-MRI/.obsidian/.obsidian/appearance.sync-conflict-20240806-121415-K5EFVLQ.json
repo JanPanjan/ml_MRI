@@ -1,0 +1,10 @@
+{
+  "cssTheme": "",
+  "theme": "moonstone",
+  "accentColor": "",
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "enabledCssSnippets": [
+    "pokedexInfo"
+  ]
+}

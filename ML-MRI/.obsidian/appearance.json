@@ -1,0 +1,14 @@
+{
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
+  "accentColor": "#6faa3c",
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "enabledCssSnippets": [
+    "pokedexInfo"
+  ],
+  "baseFontSize": 17,
+  "nativeMenus": false,
+  "showRibbon": true,
+  "baseFontSizeAction": true
+}

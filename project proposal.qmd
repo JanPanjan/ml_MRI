@@ -1,0 +1,66 @@
+---
+title: "Povečanje resolucije MR slik"
+subtitle: "Predlog za projekt za predmet Osnove strojnega učenja in podatkovnega rudarjenja"
+author: "Jan Panjan, 89231282"
+date: "02/19/2025"
+format:
+  html:
+    theme: flatly
+    embed-resources: true
+---
+
+# CAUTION: VERJETNO BOM UPORABIL PROSTATE PODATKE, PRILAGODI DOKUMENT!!!
+
+::: {.callout-tip collapse="true"}
+# TLDR
+
+Povečanje resolucije oziroma *upscaling* MR slik s pomočjo Generative adversarial
+neural network (GAN).
+:::
+
+## Podatki
+
+Podatki so dostopni preko na spletni strani [fastMRI Dataset](https://fastmri.med.nyu.edu/),
+a je za to potreben dostop s pomočjo email-a. Na voljo je mnogo podatkov (@fig-podatki).
+Uporabljal bom podatke o kolenih (*Knee MRI*), ki vsebuje več kot 1500 *fully sampled* MR slik
+kolen.
+
+![](res/kneeMRI.png)
+
+Podatki predstavljajo tako imenovan *k-space*. To so neobdelani podatki pridobljeni z
+magnetno resonanco. k-prostor je matematični prikaz frekvenc in faz signalov in se v MR slike
+pretvori s Fourierjevo transformacijo.
+
+![kot je razvidno je podatkov malo morje. Probal se bom omejiti na en komplet podatkov (~90GB).](res/data.png){#fig-podatki}
+
+Shranjeni so v h5 file format in imajo naslednje atribute:
+
+- **ismrmrd_header**: razni metapodatki
+- **k-space**: 3-dimenzionalna matrika surovih podatkov k-prostora v obliki 
+kompleksnih števil
+- **mask**: maska, ki se uporablja za označevanje določenih delov k-prostora (služi večim namenom) v obliki 1-dimenzionalnega seznama binarnih vrednosti
+
+## Problem
+
+*Fully sampled* podatke je težko pridobiti, saj zahtevajo dolg čas skeniranja. Na kvaliteto
+vplivajo tudi premikanje pacienta, zmogljivost naprave, itn. Poleg faktorjev med skeniranjem je
+proces sestavljanja MR slike iz večih slojev tudi podvržen motečim faktorjem, npr. šum v podatkih,
+t.i. *artifacts*, ipd.
+
+Zaradi tega so ponavadi MR slike slabe kvalitete, kar oteži njihovo analiziranje in potencialno 
+odkrivanje anomalij in dobro diagnozo. V najslabšem primeru je potrebno tudi ponovno skeniranje
+pacienta.
+
+## Cilj
+
+S pomočjo GAN natrenirati model, ki bo sposoben sprejeti MR sliko nizke resolucije in generirati 
+novo *sintetično* (a dovolj resnično) MR sliko visoke resolucije, ki bo dovolj kvalitetna za
+dobro nadaljno analizo.
+
+## Metode in knjižnice
+
+V osnovi bom uporabljal bom Python s knjižnico TensorFlow. Ustvaril bom GAN, torej dve nevronski
+mreži, generator in diskriminator, ki bosta delala eden proti drugemu.
+
+Ker je podatkov zelo veliko, bom poiskusil trenirati model v *batches*, tako da vzamem
+nek subset, natreniram model, ga shranim in nato ponovno natreniram z novimi podatki.

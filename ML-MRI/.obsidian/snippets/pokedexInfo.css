@@ -1,0 +1,4 @@
+.callout[data-callout="water"] {
+    --callout-color: 41, 128, 239;
+    --callout-icon: lucide-notebook-text;
+}
