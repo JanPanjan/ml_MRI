@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "daily/2025-02-16.md",
-                "mode": "source",
+                "file": "Machine Learning aproach to MRI reconstruction.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-02-16"
+              "title": "Machine Learning aproach to MRI reconstruction"
             }
           }
         ]
@@ -209,18 +209,21 @@
   },
   "active": "6e8c2491691a9dcc",
   "lastOpenFiles": [
-    "Tools.md",
-    "HR MR images problem.md",
+    "CNNs.md",
     "Machine Learning aproach to MRI reconstruction.md",
+    "HR MR images problem.md",
     "k-space.md",
+    "daily/2025-02-20.md",
+    "Tasks.md",
+    "daily/2025-02-19.md",
+    "Articles.md",
+    "daily/2025-02-16.md",
+    "Tools.md",
     "fully and under-sampled data.md",
     "DATAAAAA.md",
     "Data sites.md",
-    "CNNs.md",
-    "Articles.md",
     "visual artifacts.md",
     "Aliasing artifacts.md",
-    "daily/2025-02-16.md",
     "daily/2025-02-15.md",
     "Image upscaling.md",
     "files/NYU FastMRI Data Download Links.eml",
@@ -243,9 +246,6 @@
     "Relacijski model podatkovnih baz.md",
     "files/Pasted image 20250215154917.webp",
     "Logs.md",
-    "Nivoji abstrakcije v SUPB.md",
-    "ACID lastnosti.md",
-    "Transakcije.md",
     "files/Pasted image 20250215150001.webp",
     "files/Pasted image 20250215145931.webp",
     "files/Pasted image 20250215144706.webp",
