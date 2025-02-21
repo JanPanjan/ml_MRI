@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning aproach to MRI reconstruction.md",
-                "mode": "preview",
+                "file": "daily/2025-02-20.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Machine Learning aproach to MRI reconstruction"
+              "title": "2025-02-20"
             }
           }
         ]
@@ -209,8 +209,8 @@
   },
   "active": "6e8c2491691a9dcc",
   "lastOpenFiles": [
-    "CNNs.md",
     "Machine Learning aproach to MRI reconstruction.md",
+    "CNNs.md",
     "HR MR images problem.md",
     "k-space.md",
     "daily/2025-02-20.md",
